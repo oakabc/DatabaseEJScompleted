@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>นักเรียนในห้องนี้</h1>
+    <div class="container">
+        <% students.forEach(student => { %>
+            <div class="card">
+                <h2><%= student.name %></h2>
+                <p><strong>Age:</strong> <%= student.age %></p>
+                <p><strong>Email:</strong> <%= student.email %></p>
+                <p><strong>Phone:</strong> <%= student.phone %></p>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <form method = "post" action = "/students" style="padding: 20px; border: 1px solid #ccc; border-radius: 5px; display: flex; flex-direction: column; align-items: center;">
+            <div style="margin-bottom: 10px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+
+            <div>
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Insert</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
