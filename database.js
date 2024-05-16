@@ -24,9 +24,9 @@ app.get('/students', async (req,res) => {
     const connection = await dbConn
     const [rows] = await connection.query('SELECT * from students')
      
-    res.json(rows)
+    //res.json(rows)
     //res.send(rows[0]) // ส่งแค่ข้อมูล เนื่องจากมีปัญหาด้านข้อมูล
-    //res.render('students', { students: rows[0] });
+    res.render('students', { students: rows });
 })
 
 // GET students/:id 
